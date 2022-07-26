@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  layout 'admin' # 一次設定所有action的版型
+  #layout 'admin' # 一次設定所有action的版型
   
   def home
   end
