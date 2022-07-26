@@ -3,6 +3,9 @@ class PagesController < ApplicationController
   end
 
   def about
+    # 有兩種方式取得 name 變數
+    params[:name]   # => "Ray"
+    params['name']  # => "Ray"
   end
 
   def math
