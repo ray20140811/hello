@@ -8,6 +8,7 @@ class PagesController < ApplicationController
     #params['name']  # => "Ray"
     
     @name = "#{params[:first_name]} #{params[:last_name]}"
+    render layout: 'admin' # 指定版型
   end
 
   def math
