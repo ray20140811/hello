@@ -4,8 +4,10 @@ class PagesController < ApplicationController
 
   def about
     # 有兩種方式取得 name 變數
-    params[:name]   # => "Ray"
-    params['name']  # => "Ray"
+    #params[:name]   # => "Ray"
+    #params['name']  # => "Ray"
+    
+    @name = "#{params[:first_name]} #{params[:last_name]}"
   end
 
   def math
