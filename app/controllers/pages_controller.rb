@@ -9,9 +9,11 @@ class PagesController < ApplicationController
     #params[:name]   # => "Ray"
     #params['name']  # => "Ray"
     
-    @name = "#{params[:first_name]} #{params[:last_name]}"
+    #@name = "#{params[:first_name]} #{params[:last_name]}"
     #render layout: 'admin' # 指定版型
     #render 'pages/about', layout:'admin'    # 和上面一行功能相同
+
+    @name = "#{params[:name]}"
   end
 
   def math

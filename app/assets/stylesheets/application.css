@@ -13,7 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
 li.active > a {
     font-size: 200%;
     color: red;
 }
+
+ul > li { display: inline; }

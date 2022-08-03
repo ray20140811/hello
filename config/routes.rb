@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   #get 'pages/about'
   #get 'pages/math'
   #get 'home', 'about', 'math', controller: 'pages' # _navbar.html.erb     about_path # => '/about'
-  get :home, :math, controller: :pages
-  get :about, controller: :pages, path: :me         # _navbar.html.erb     about_path # => '/me'
-
+  #get :home, :math, controller: :pages
+  #get :about, controller: :pages, path: :me         # _navbar.html.erb     about_path # => '/me'
+  get :home, :math, :about, :form, controller: :pages
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
