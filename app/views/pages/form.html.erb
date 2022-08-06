@@ -1,4 +1,4 @@
-<form action="/about" method="get"> 
-    <input type="text" name="name">
-    <input type="submit" value="Submit">
-</form>
+<%= form_tag("/about", method: "get") do %>
+    <%= text_field_tag(:name) %>
+    <%= submit_tag("Hello") %>
+<% end %>
